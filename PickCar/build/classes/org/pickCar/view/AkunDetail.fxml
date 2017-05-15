@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pickCar.controller.AkunDetailController">
+    <children>
+        <ImageView fitHeight="43.0" fitWidth="78.0" layoutX="29.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logoPickCar.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="120.0" layoutY="22.0" text="Pick Car">
+            <font>
+                <Font name="Consolas Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="120.0" layoutY="71.0" text="Pick the car to pick you!">
+            <font>
+                <Font name="Consolas Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="140.0" text="Nama                      :" />
+        <Label layoutX="29.0" layoutY="212.0" text="No HP                     :" />
+        <Label layoutX="29.0" layoutY="177.0" text="Alamat                    :" />
+      <Label fx:id="namanya" layoutX="150.0" layoutY="140.0" prefHeight="17.0" prefWidth="113.0" />
+      <TableView fx:id="pesananTB" layoutX="25.0" layoutY="259.0" prefHeight="185.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="idPesanTB" prefWidth="116.0" text="ID Pesanan" />
+            <TableColumn fx:id="idMobilTB" prefWidth="109.0" text="Column X" visible="false" />
+          <TableColumn fx:id="namaTB" prefWidth="169.0" text="Nama Pemesan" />
+            <TableColumn fx:id="alamatTB" prefWidth="264.0" text="Alamat Jemput" />
+        </columns>
+      </TableView>
+      <Label fx:id="alamat" layoutX="150.0" layoutY="177.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label fx:id="nohp" layoutX="150.0" layoutY="212.0" prefHeight="17.0" prefWidth="106.0" />
+      <Button fx:id="but" layoutX="344.0" layoutY="455.0" mnemonicParsing="false" onAction="#available" prefHeight="25.0" prefWidth="68.0" text="Available" visible="false" />
+      <ComboBox fx:id="originCB" layoutX="25.0" layoutY="455.0" prefWidth="150.0" visible="false" />
+      <ComboBox fx:id="destinationCB" layoutX="181.0" layoutY="455.0" prefWidth="150.0" visible="false" />
+      <Button fx:id="nona" layoutX="420.0" layoutY="455.0" mnemonicParsing="false" onAction="#non" prefHeight="25.0" prefWidth="97.0" text="Non-available" visible="false" />
+      <Label fx:id="telah" layoutX="420.0" layoutY="229.0" prefHeight="17.0" prefWidth="150.0" text="Mobil telah diperbaharui!!" visible="false" />
+    </children>
+</AnchorPane>

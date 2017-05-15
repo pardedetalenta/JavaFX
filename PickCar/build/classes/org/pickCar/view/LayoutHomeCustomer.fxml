@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pickCar.controller.HomeCustomerController">
+    <children>
+        <ImageView fitHeight="87.0" fitWidth="87.0" layoutX="24.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logoPickCar.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="123.0" layoutY="23.0" text="Pick Car">
+            <font>
+                <Font name="Consolas Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="123.0" layoutY="66.0" text="Pick the car to pick you!">
+            <font>
+                <Font name="Consolas Italic" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="535.0" layoutY="84.0" mnemonicParsing="false" onAction="#my" prefHeight="25.0" prefWidth="87.0" text="My Account" />
+        <Button layoutX="632.0" layoutY="84.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="74.0" text="Log-out" />
+        <ComboBox fx:id="originCB" layoutX="23.0" layoutY="143.0" prefHeight="25.0" prefWidth="193.0" />
+        <ComboBox fx:id="destinationCB" layoutX="243.0" layoutY="143.0" prefHeight="25.0" prefWidth="193.0" />
+        <Label layoutX="24.0" layoutY="121.0" text="Origin" />
+        <Label layoutX="243.0" layoutY="121.0" text="Destination" />
+        <Button layoutX="632.0" layoutY="143.0" mnemonicParsing="false" onAction="#searchHome" prefHeight="25.0" prefWidth="74.0" text="Search" />
+        <TextField fx:id="passengerTF" layoutX="462.0" layoutY="143.0" prefHeight="25.0" prefWidth="160.0" />
+        <Label layoutX="464.0" layoutY="121.0" text="Passenger" />
+      <TableView fx:id="mobilTB" layoutX="25.0" layoutY="248.0" prefHeight="281.0" prefWidth="683.0">
+        <columns>
+            <TableColumn fx:id="idTB" prefWidth="82.0" text="ID Mobil" />
+          <TableColumn fx:id="classTB" prefWidth="116.0" text="Class" />
+          <TableColumn fx:id="tipeTB" prefWidth="123.0" text="Tipe Mobil" />
+            <TableColumn fx:id="dari" prefWidth="108.0" text="Dari" />
+            <TableColumn fx:id="tujuan" prefWidth="103.0" text="Tujuan" />
+            <TableColumn fx:id="priceTB" prefWidth="150.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="24.0" layoutY="544.0" mnemonicParsing="false" onAction="#detailHomeCustomer" prefHeight="25.0" prefWidth="87.0" text="Detail" />
+      <ComboBox fx:id="classCB" layoutX="23.0" layoutY="207.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button fx:id="filter" layoutX="243.0" layoutY="207.0" mnemonicParsing="false" onAction="#filterHome" prefHeight="25.0" prefWidth="112.0" text="Filter" />
+      <Label layoutX="23.0" layoutY="184.0" text="Class" />
+      <Label fx:id="accountLB" layoutX="535.0" layoutY="58.0" prefHeight="17.0" prefWidth="87.0" text="Label" />
+      <Label layoutX="120.0" layoutY="548.0" text="Detail For Order" />
+      <Button layoutX="633.0" layoutY="220.0" mnemonicParsing="false" onAction="#all" prefHeight="25.0" prefWidth="74.0" text="All Car" />
+      
+    </children>
+</AnchorPane>

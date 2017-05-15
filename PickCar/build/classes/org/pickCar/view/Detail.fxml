@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pickCar.controller.DetailController">
+   <children>
+      <ImageView fitHeight="43.0" fitWidth="78.0" layoutX="29.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoPickCar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="22.0" text="Pick Car">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="71.0" text="Pick the car to pick you!">
+         <font>
+            <Font name="Consolas Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="140.0" text="ID Mobil                  :" />
+      <Label layoutX="29.0" layoutY="212.0" text="Kapasitas                :" />
+      <Label layoutX="29.0" layoutY="177.0" text="Driver                      :" />
+      <Label layoutX="29.0" layoutY="250.0" text="Tipe Mobil              :" />
+      <Label fx:id="driverl" layoutX="150.0" layoutY="177.0" prefHeight="17.0" prefWidth="149.0" />
+      <Label fx:id="kapasitas" layoutX="150.0" layoutY="212.0" prefHeight="17.0" prefWidth="149.0" />
+      <Label fx:id="tipe" layoutX="150.0" layoutY="250.0" prefHeight="17.0" prefWidth="149.0" />
+      <TextField fx:id="idMTF" layoutX="150.0" layoutY="136.0" />
+      <Button layoutX="313.0" layoutY="136.0" mnemonicParsing="false" onAction="#detail1" text="Detail" />
+      <Label layoutX="29.0" layoutY="287.0" text="Fasilitas                  :" />
+      <Label fx:id="fasilitas" layoutX="150.0" layoutY="287.0" prefHeight="109.0" prefWidth="216.0" />
+      <Label fx:id="fasilitas1" layoutX="150.0" layoutY="287.0" prefHeight="17.0" prefWidth="168.0" />
+   </children>
+</AnchorPane>
